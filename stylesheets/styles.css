@@ -33,23 +33,32 @@ body {
   box-shadow: rgba(0, 0, 0, 0.2) 0 0 0 1px, rgba(0, 0, 0, 0.45) 0 3px 10px;
 }
 
-header, section, footer, nav {
+header, section, footer{
   display: block;
 }
 
 nav {
 	width: 100%;
 	background: rgba(50,50,50,0.9);
+	text-align: center;
+	/* font-size: 19px; */
+	font-weight: bold;
 }
 
 nav a {
 	color: #FFFFFF;
 	padding-left: 20px;
 	padding-right: 20px;
+	border-right: 3px solid #6C8979;
+	
+}
+nav a:last-child{
+	border-right: none;
 }
 
 a {
-  color: #093;
+  color: #6C8979;
+  font-weight: bold;
   text-decoration: none;
 }
 
@@ -79,6 +88,12 @@ header {
   position: relative;
   padding: 15px 20px;
   border-bottom: 1px solid #B2D2E1;
+}
+header img{
+	position: relative;
+	left: 620px;
+	bottom: 59px;
+	margin: -77px;	
 }
 header h1 {
   margin: 0;
