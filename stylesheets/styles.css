@@ -69,6 +69,10 @@ a {
   text-decoration: none;
 }
 
+a.dl-data{
+	margin-left: 445px;
+}
+
 p {
   margin: 0 0 20px;
   padding: 0;
@@ -330,9 +334,6 @@ footer a {
   font-weight: bold;
 }
 footer p {
-  float: left;
-}
-footer p + p {
   float: right;
 }
 
