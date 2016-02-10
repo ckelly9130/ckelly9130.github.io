@@ -1,0 +1,10 @@
+canvas{
+    width: 800px;
+    height: 800px;
+    border: 5px solid black;
+}
+
+.wrapper{
+    width: 800px;
+    margin: 0 auto;
+}

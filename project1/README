@@ -1,0 +1,25 @@
+/*
+ * -------------------
+ * Cameron Kelly
+ * 02-10-2016
+ * CSCI4070 Project 1
+ * -------------------
+ */
+ 
+ Spaces Invaded
+ 
+ Files Included:
+	- index.html
+	- /css/invaders.css
+	- /img/spritesheet.png
+	- /js/constants.js
+	- /js/game.js
+	
+To Run:
+	Locally:
+		Open the main directory ".../project1" and launch "index.html" in a broswer that supports HTML5
+		
+	Remotely:
+		Go to ckelly91.github.io
+		Navigate to the "Video Games Page"
+		Select "Spaces Invaded" from the list
