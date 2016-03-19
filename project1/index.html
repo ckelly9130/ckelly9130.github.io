@@ -7,11 +7,17 @@
 
 </head>
 <body onload="init()">
-<div class="wrapper">
-    <canvas id="canvas" onclick="startGame()">Your browser does not support HTML canvas</canvas>
-
+<a href="../ports/games.html">Back to Games</a>
+<canvas id="canvas" class="abs" onclick="startGame()">Your browser does not support HTML canvas</canvas>
+<div id="instructions" class = "abs">
+    <h3>Controls</h3>
+    <p>Left / Right Arrow - Move left and right</p>
+    <p>Spacebar - Shoot</p>
 </div>
+
+
 <script type="text/javascript" src="js/game.js"></script>
 <script type="text/javascript" src="js/constants.js"></script>
+
 </body>
 </html>

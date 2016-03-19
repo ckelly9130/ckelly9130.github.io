@@ -217,10 +217,10 @@ function update(){
     ctx.fillStyle = "#00FF00";
     ctx.font= GAME_SMALL_FONT;
     ctx.textAlign = "left";
-    ctx.fillText("Lives: " + lives.toString(),0,15);
+    ctx.fillText("Lives: " + lives.toString(),15,15);
 
     ctx.textAlign = 'right';
-    ctx.fillText("Score: " + score.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","),stage.width,15);
+    ctx.fillText("Score: " + score.toString().replace(/\B(?=(\d{3})+(?!\d))/g,","),stage.width-15,15);
 
     /*Draw player*/
     ctx.drawImage(playerImage,clipX,0,player.w,player.h,player.x,player.y,player.w,player.h);

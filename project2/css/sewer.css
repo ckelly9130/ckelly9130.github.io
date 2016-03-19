@@ -1,27 +1,15 @@
-body{
+html,body {
     background-color: #333;
-    color: #FFF;
+    color: #fff;
     font-family: helvetica, arial, sans-serif;
     margin: 0;
     padding: 0;
     font-size: 8pt;
 }
 
-canvas{
-    width: 400px;
-    height: 400px;
-    border: 5px ridge #0F0;
-    margin: 10px auto;
-}
-
 a, a:visited{
     color: #FFF;
     margin: 10px;
-}
-
-#instructions {
-    text-align: center;
-    top: 420px;
 }
 
 .abs{
@@ -30,4 +18,14 @@ a, a:visited{
     bottom: 0;
     left: 0;
     right: 0;
+}
+
+#canvas {
+    margin: 10px auto;
+    border: 5px ridge #FF0;
+}
+
+#instructions {
+    text-align: center;
+    top: 490px;
 }
