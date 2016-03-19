@@ -1,11 +1,4 @@
-body{
-    background-color: #333;
-    color: #FFF;
-    font-family: helvetica, arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    font-size: 8pt;
-}
+
 
 canvas{
     width: 400px;
@@ -14,7 +7,7 @@ canvas{
     margin: 10px auto;
 }
 
-a, a:visited{
+#page_link{
     color: #FFF;
     margin: 10px;
 }
@@ -22,6 +15,12 @@ a, a:visited{
 #instructions {
     text-align: center;
     top: 420px;
+    width: 250px;
+    height: 80px;
+    opacity: 0.8;
+    background-color: #DEDEDE;
+    border: 2px solid #000;
+    margin: 10px auto;
 }
 
 .abs{
