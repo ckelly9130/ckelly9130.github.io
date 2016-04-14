@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Path Planning Simulator</title>
+    <link rel="stylesheet" href="css/planner.css">
+    <script type="application/javascript" src="js/simulator.js"></script>
+</head>
+<body onload="init()">
+    <div id="wrapper">
+        <h1>Path Planning Simulator</h1>
+        <div id="main">
+            <canvas id="myCanvas">Your browser does not support html canvas</canvas>
+            <div id="settings">
+                <label>Map Input</label><br/>
+
+                    <input type="radio" name="inputType" value="defaults" onclick="Show('defaults')">Default Maps<br>
+                    <div id="defaults" class="hidden">
+                        <label>Select Map</label><br/>
+                        <button onclick="LoadMap('map1.txt')">Map 1</button>
+                        <button onclick="LoadMap('map2.txt')">Map 2</button>
+                        <button onclick="LoadMap('map3.txt')">Map 3</button><br/><br/>
+                    </div>
+
+                    <input type="radio" name="inputType" value="random" onclick="Show('generate')">Random<br>
+                    <div id="generate" class="hidden">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="GenerateMap('random')" style="align-self: center">Generate Map</button><br/><br/>
+                    </div>
+
+                    <input type="radio" name="inputType" value="custom" onclick="Show('custom')">Custom<br>
+                    <div id="custom" class="hidden">
+                        <label>X(1-32):</label>&nbsp;<input id="x" type="text" maxlength="2" size="2"><br/><label>Y(1-32):</label>&nbsp;<input id ="y" type="text" maxlength="2" size="2">
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button onclick="GenerateMap('custom')" style="align-self: center">Generate Map</button><br/><br/>
+                    </div>
+
+
+
+                <div class="hidden" id="options">
+                    <textarea id="fileInput" rows="10" placeholder="Input Map Data"></textarea><br/>
+                    <p id='instStart' class="visible" style="color:#0F0;font-size: 14px;">Select Start Node</p>
+                    <p id='instEnd' class="visible" style="color:#F00;font-size: 14px;">Select End Node</p>
+                    <label for="algorithm">Algorithm</label>
+                    <select id="algorithm" onchange="SetAlgorithm()">
+                        <option value="a*">A*</option>
+                        <option value="dijkstra">Dijkstra</option>
+                        <option value="bestFirst">Best First</option>
+                    </select><br/><br/>
+                    <label for="heuristic">Heuristic</label>
+                    <select id="heuristic" onchange="SetHeuristic()">
+                        <option value="manhattan">Manhattan</option>
+                        <option value="diagonal">Diagonal</option>
+                        <option value="euclidean">Euclidean</option>
+                    </select><br/><br/>
+                    <label id='speedLabel' for="speed">Animation Speed: 1</label><br/>
+                    <input type="range" name="speed" id="speed" value="1" min="0" max="100" onchange="DisplayValue()"><br/>
+                    <button id="start" onclick="Start()">Start</button><br/><br/>
+
+                    <div id="results" class="hidden">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
